@@ -1,9 +1,4 @@
-/* =========================
-   RESPONSIVE MEDIA QUERIES
-   Code same rakha hai sirf responsive add kiya hai
-========================= */
-
-/* ---------- Tablet ---------- */
+/* ---------- Tablet View ---------- */
 @media screen and (max-width: 1024px) {
 
   .header {
@@ -13,22 +8,22 @@
   }
 
   .header > div {
-    gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 20px;
   }
 
   .section-parent {
     flex-direction: column;
     height: auto;
-    align-items: center;
   }
 
   .section-1,
   .section-2 {
     width: 100%;
     text-align: center;
-    padding: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .section-1 > p {
@@ -43,15 +38,14 @@
   .section-2 img {
     width: 100%;
     height: auto;
-    max-width: 500px;
   }
 
   .green-section {
     margin: 40px 20px;
-    flex-direction: column;
     height: auto;
-    padding: 30px 20px;
+    flex-direction: column;
     gap: 20px;
+    padding: 30px 20px;
     text-align: center;
   }
 
@@ -65,25 +59,26 @@
     width: 90%;
   }
 
-  .my-button {
-    width: 90%;
-  }
-
-  .para-two {
-    width: 90%;
-    font-size: 18px;
-  }
-
   .mobile-section {
     flex-direction: column;
     height: auto;
     padding: 20px;
-    gap: 50px;
   }
 
   .mobile-section-one,
+  .mobile-section-two,
   .mobile-section-three {
+    width: 100%;
     align-items: center;
+  }
+
+  .circle {
+    width: 300px;
+    height: 300px;
+  }
+
+  .circle img {
+    width: 80%;
   }
 
   .box-of-one,
@@ -91,7 +86,6 @@
   .box-of-three,
   .box-of-four {
     width: 100%;
-    max-width: 400px;
     text-align: center;
     align-items: center;
   }
@@ -107,36 +101,20 @@
 
   .box-of-four > p {
     width: 100%;
-    text-align: center;
   }
 
-  .mobile-section-two {
-    padding-top: 0;
-  }
-
-  .circle {
-    width: 300px;
-    height: 300px;
-  }
-
-  .circle img {
-    width: 80%;
-  }
-
-  .dots > img {
-    margin-left: 20px;
-    padding-top: 50px;
+  .para-two {
+    width: 90%;
   }
 
   .benefits {
-    padding: 20px;
-    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .h2-benefits {
     padding-left: 0;
     justify-content: center;
-    text-align: center;
     flex-wrap: wrap;
   }
 
@@ -148,7 +126,7 @@
     margin: 0;
     flex-direction: column;
     align-items: center;
-    padding: 30px 20px;
+    padding: 20px;
     gap: 20px;
   }
 
@@ -157,16 +135,13 @@
   .zero-three {
     width: 100%;
     height: auto;
-    padding: 0;
-    text-align: center;
-    align-items: center;
+    padding: 20px;
   }
 
   .img-h-1,
   .img-h-2,
   .img-h-3 {
     width: 100%;
-    justify-content: center;
     flex-wrap: wrap;
   }
 
@@ -178,10 +153,10 @@
     height: auto;
   }
 
-  .run > img,
-  .dollar > img,
-  .call > img {
-    width: 220px;
+  .run img,
+  .call img,
+  .dollar img {
+    width: 200px;
     height: auto;
   }
 
@@ -190,6 +165,7 @@
     height: auto;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     gap: 30px;
     padding: 30px 20px;
   }
@@ -198,69 +174,30 @@
   .box-alpha,
   .box-beta {
     padding: 0;
-    text-align: center;
+    width: 100%;
+    height: auto;
   }
 
   .footer-buttons {
     flex-wrap: wrap;
     justify-content: center;
-    padding-top: 20px;
   }
 }
 
 
-/* ---------- Mobile ---------- */
-@media screen and (max-width: 600px) {
+/* ---------- Mobile View ---------- */
+@media screen and (max-width: 768px) {
 
   h1 {
-    font-size: 32px;
-    line-height: 42px;
+    font-size: 35px;
   }
 
   .tere-heading,
   .h2-benefits {
-    font-size: 30px;
+    font-size: 32px;
   }
 
-  .section-1 {
-    padding: 20px;
-  }
-
-  .Download-1,
-  .Download-2 {
-    width: 100%;
-    justify-content: center;
-    margin-left: 0;
-    padding: 12px;
-  }
-
-  .button-div {
-    width: 100%;
-    flex-direction: column;
-  }
-
-  .green-section input,
-  .my-button {
-    width: 100%;
-    font-size: 18px;
-  }
-
-  .circle {
-    width: 250px;
-    height: 250px;
-  }
-
-  .circle img {
-    width: 75%;
-  }
-
-  .box-of-one > h3,
-  .box-of-two > h3,
-  .box-of-three > h3,
-  .box-of-four > h3 {
-    font-size: 20px;
-  }
-
+  .para-two,
   .box-of-one > p,
   .box-of-two > p,
   .box-of-three > p,
@@ -272,21 +209,34 @@
     line-height: 24px;
   }
 
-  .img-h-1 > h3,
-  .img-h-2 > h3,
-  .img-h-3 > h3 {
-    font-size: 20px;
-    text-align: center;
+  .help-btn,
+  .my-button {
+    font-size: 16px;
   }
 
-  .run > img,
-  .dollar > img,
-  .call > img {
-    width: 180px;
-  }
-
-  .footer-buttons {
-    flex-direction: column;
+  .green-section input {
+    font-size: 16px;
     width: 100%;
+  }
+
+  .Download-1,
+  .Download-2 {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .button-div {
+    width: 100%;
+    align-items: center;
+  }
+
+  .circle {
+    width: 250px;
+    height: 250px;
+  }
+
+  .dots > img {
+    margin-left: 20px;
+    width: 50px;
   }
 }
